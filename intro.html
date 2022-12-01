@@ -8,74 +8,31 @@
     </head>
         <body style="background-color:black">
             <style>
-            /*for create menu bar*/
-            .sidenav {
-  height: 100%;
-  width: 100px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:rgb(33, 32, 32);
-  overflow-x: hidden;
-  padding-top: 20px;
+            
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
 }
 
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
+li {
+  padding-right: 17%;
+  float: left;
+}
+
+li a {
   display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
-
-/* Main content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color:rgb(33, 32, 32);
   color: white;
+  text-align: center;
+  padding: 40%;
+  text-decoration: none;
 }
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color:rgb(33, 32, 32);
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-  
-       
-                .menu{
-                    background-color:transparent;
-                    align-items: center;
-                    display: block;
-
-                }
                 .icone:hover{
                 
+                  padding: 14px;
                     background-color:black;
                 
                    color: #000;
@@ -85,19 +42,18 @@
             
                 }
                 .active:hover{
+                  text-align: center;
+                  font-size: 1cm;
 
+                  padding: 14px 16px;
 
                     background-color: #04AA6d;
     
                 }
                 body{margin: 0;}
-                .iconebar{
-                    height: 100px;
-                    width: 20%;
-                    background-color:rgb(33, 32, 32);
-                    align-items: top left;
-                }
-                .intro{
+                
+
+              .intro{
                     font-family: "Stencil";
                     padding: 16px;
                     margin-bottom: 30px;
@@ -124,25 +80,31 @@
             </style>
             <!--menu bar-->
             
-            <div class="sidenav">
+        
             
+            <ul>
+              <li>
                <div class="icone" >
         <center>
-                <i class="material-icons" style="font-size:48px;color:#04AA6d;align-items: center;">apps</i><p style="font-size:x-large;color: #818181;">intro</p>
+          <a href="intro.html"><i class="material-icons" style="font-size:48px;color:#04AA6d;align-items: center;">apps</i></a><p style="font-size:x-large;color: #818181;">intro</p>
         </center></div>
-                <br>
-        
+                
+              </li>
+              <li>
                 <div class="active">
                 <a href="profile.html"><i class="material-icons" style="font-size:48px;color:black">face</i><p>profile</p></a>
-                </div><br>
+                </div>
+              </li>
+              <li>
                 <div class="active">
                     <a href="contact.html"><i class="material-icons" style="font-size:48px;color:black">devices</i><p style="font-size: larger;">contact</p></a>
                 
-                </div><br>
-                <div class="active">
-                <a href="clg.html"><i class="material-icons" style="font-size:48px;color:black">build</i><p>skill set</p></a>
+                </div></li><li>
+                <div class="active" style="size:1cm;">
+                <a href="skills.html"><i class="material-icons" style="font-size:48px;color:black">build</i><p>skill set</p></a>
                 </div>
-            </div>
+            </div></li>
+          </ul>
             <div class="intro">
             <body>
                 <p style=><bold>resume</p></body>
@@ -157,17 +119,3 @@
             </body>
         </body>
 </html>
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
