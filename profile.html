@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="moon.css">
     </head>
         <body style="background-color:black">
             <style>
@@ -180,7 +181,55 @@
 
 
             </style>
-            <!--menu bar-->
+            <script>
+                function switchMode() {
+                    
+
+          let moon = document.getElementById ("moon");
+            if(moon.className=="moon"){
+              moon.className="sun";
+              document.body.style.backgroundColor = "#fff";
+            const elemeny = document.querySelector(".title");
+            elemeny.style.color="black";
+            const id1 = document.getElementById("l1");
+            id1.style.color= "black";
+            const id2 = document.getElementById("b1");
+            id2.style.color= "black";
+            const id3 = document.getElementById("b2");
+            id3.style.color= "black";
+            const id4 = document.getElementById("b3");
+            id4.style.color= "black";
+            const id5 = document.getElementById("b4");
+            id5.style.color= "black";
+            
+
+            
+
+            }
+          else {
+            moon.className ="moon";
+            document.body.style.backgroundColor = "#141D26";
+            const elemeny = document.querySelector(".title");
+            elemeny.style.color="#fff";
+            const id1 = document.getElementById("l1");
+            id1.style.color= "#fff";
+            const id2 = document.getElementById("b1");
+            id2.style.color= "#fff";
+            const id3 = document.getElementById("b2");
+            id3.style.color= "#fff";
+            const id4 = document.getElementById("b3");
+            id4.style.color= "#fff";
+            const id5 = document.getElementById("b4");
+            id5.style.color= "#fff";
+          }
+        }
+        
+
+
+            </script>
+            <div class="night-toggle" onClick="switchMode()">
+                <div id="moon" class="moon"></div>
+              </div>
             
             
             <div class="sidenav">
@@ -221,10 +270,10 @@
         
             </div>
        <div class="design"> 
-        <hr color="#04aa6d">
+        <hr id = "l1" ; color="#04aa6d">
        </div>      
         <div class="title">
-            <b style="font-size: 60px;">
+            <b id = "b1";style="font-size: 60px;">
            my services
             </b>
         </div><br>
@@ -237,7 +286,7 @@
 
 
         <div class="subtitle">
-            <b>development</b>
+            <b id = "b2">development</b>
         </div><br>
         <div class="develop">
         <i>Building a custom tailored solution based on your technical specificaiton. Skilled at writing well-designed, testable and efficient code using current best practices in Web development. </i></p>
@@ -248,7 +297,7 @@
         </div>
         <br>
         <div class="subtitle">
-            <b>Database</b>
+            <b id = "b3">Database</b>
             
             </div>
             <div class="develop">
@@ -262,7 +311,7 @@
         </div><br>
 
          <div class="subtitle">
-            <b>data security</b>
+            <b id = "b4">data security</b>
         </div>
         <div class="develop">
         <p><i>strategy with leading data protection technology to safeguard 
@@ -270,29 +319,6 @@
         </div>
         <BR>
             <BR>
-                <script type="module">
-                    // Import the functions you need from the SDKs you need
-                    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-                    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
-                    // TODO: Add SDKs for Firebase products that you want to use
-                    // https://firebase.google.com/docs/web/setup#available-libraries
-                  
-                    // Your web app's Firebase configuration
-                    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-                    const firebaseConfig = {
-                      apiKey: "AIzaSyAcAJK-0mY09SFL_USPm2looxed-qAzFEo",
-                      authDomain: "my-resume-11e04.firebaseapp.com",
-                      projectId: "my-resume-11e04",
-                      storageBucket: "my-resume-11e04.appspot.com",
-                      messagingSenderId: "1072376027849",
-                      appId: "1:1072376027849:web:96b6a89169aba2f355cb18",
-                      measurementId: "G-XVCF8KLR3Q"
-                    };
-                  
-                    // Initialize Firebase
-                    const app = initializeApp(firebaseConfig);
-                    const analytics = getAnalytics(app);
-                  </script>
-
+                
         </body>  
 </html>

@@ -4,7 +4,7 @@
         <title>resume</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
+        <link rel="stylesheet" href="moon.css">
     
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     </head>
@@ -201,6 +201,68 @@
 
             </style>
             <!--menu bar-->
+            <script>
+              function switchMode() {
+                  
+
+        let moon = document.getElementById ("moon");
+          if(moon.className=="moon"){
+            moon.className="sun";
+            document.body.style.backgroundColor = "#fff";
+          const elemeny = document.querySelector(".title");
+          elemeny.style.color="black";
+          const id1 = document.getElementById("l1");
+          id1.style.color= "black";
+          const id2 = document.getElementById("b1");
+          id2.style.color= "black";
+          const id3 = document.getElementById("b2");
+          id3.style.color= "black";
+          const id4 = document.getElementById("b3");
+          id4.style.color= "black";
+          const id5 = document.getElementById("b4");
+          id5.style.color= "black";
+          const id6 = document.getElementById("b5");
+          id6.style.color= "black";
+          const id7 = document.getElementById("b6");
+          id7.style.color= "black";
+          const id8 = document.getElementById("b7");
+          id8.style.color= "black";
+        
+
+          
+
+          }
+        else {
+          moon.className ="moon";
+          document.body.style.backgroundColor = "#141D26";
+          const elemeny = document.querySelector(".title");
+          elemeny.style.color="#fff";
+          const id1 = document.getElementById("l1");
+          id1.style.color= "#fff";
+          const id2 = document.getElementById("b1");
+          id2.style.color= "#fff";
+          const id3 = document.getElementById("b2");
+          id3.style.color= "#fff";
+          const id4 = document.getElementById("b3");
+          id4.style.color= "#fff";
+          const id5 = document.getElementById("b4");
+          id5.style.color= "#fff";
+          const id6 = document.getElementById("b5");
+          id6.style.color= "#fff";
+          const id7 = document.getElementById("b6");
+          id7.style.color= "#fff";
+          const id8 = document.getElementById("b7");
+          id8.style.color= "#fff";
+        
+        }
+      }
+      
+
+
+          </script>
+          <div class="night-toggle" onClick="switchMode()">
+              <div id="moon" class="moon"></div>
+            </div>
             
             <div class="sidenav">
             
@@ -232,13 +294,13 @@
                 <hr color="#04aa6d">
              </div>
              <div class="title">
-            <I style="font-size:50px ;">HTML</I>
+            <I id = "l1"; style="font-size:50px ;">HTML</I>
              </div>
 <div class="container">
   <div class="skills html">95%</div>
 </div>
 <div class="title">
-    <I style="font-size:50px ;">CSS</I>
+    <I id = "b1";style="font-size:50px ;">CSS</I>
      </div>
 
 <div class="container">
@@ -246,14 +308,14 @@
 </div>
 </div>
 <div class="title">
-    <I style="font-size:50px ;">JAVASCRIPT</I>
+    <I id = "b2";style="font-size:50px ;">JAVASCRIPT</I>
      </div>
 
 <div class="container">
   <div class="skills js">70%</div>
 </div>
 <div class="title">
-    <I style="font-size:50px ;">PYTHON</I>
+    <I id = "b3";style="font-size:50px ;">PYTHON</I>
      </div>
 
 
@@ -261,19 +323,19 @@
   <div class="skills php">60%</div>
 </div>
 <div class="title">
-    <I style="font-size:50px ;">c#</I>
+    <I id = "b4";style="font-size:50px ;">c#</I>
 </div>
     <div class="container">
         <div class="skills C">40%</div>
       </div>
       <div class="title">
-        <I style="font-size:50px ;">JAVA</I>
+        <I id = "b5";style="font-size:50px ;">JAVA</I>
     </div>
     <div class="container">
         <div class="skills JAVA">50%</div>
       </div>
       <div class="title">
-        <I style="font-size:50px ;">MYSQL</I>
+        <I id = "b6";style="font-size:50px ;">MYSQL</I>
     </div>
     <div class="container">
         <div class="skills MYSQL">15%</div>
@@ -281,43 +343,12 @@
       <BR>
         <BR><BR>
             <DIV class="title">
-                <I>DECLARATION</I>
+                <I id = "b7";>DECLARATION</I>
                 <hr color="#04aa6d">
             </DIV>
             <div class="contant">
                 <i>I here declare that all the above information is true to the best of my knowlege.I am responsible for the authenticity of all the information.</i>
             </div><br><br>
-            <script type="module">
-              // Import the functions you need from the SDKs you need
-              import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-              import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
-              // TODO: Add SDKs for Firebase products that you want to use
-              // https://firebase.google.com/docs/web/setup#available-libraries
-            
-              // Your web app's Firebase configuration
-              // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-              const firebaseConfig = {
-                apiKey: "AIzaSyAcAJK-0mY09SFL_USPm2looxed-qAzFEo",
-                authDomain: "my-resume-11e04.firebaseapp.com",
-                projectId: "my-resume-11e04",
-                storageBucket: "my-resume-11e04.appspot.com",
-                messagingSenderId: "1072376027849",
-                appId: "1:1072376027849:web:96b6a89169aba2f355cb18",
-                measurementId: "G-XVCF8KLR3Q"
-              };
-            
-              // Initialize Firebase
-              const app = initializeApp(firebaseConfig);
-              const analytics = getAnalytics(app);
-            </script>
-    
-     
-    
-
-
-           
-
-        
             </body>
         </body>
 </html>
